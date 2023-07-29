@@ -116,7 +116,7 @@ WSGI_APPLICATION = 'NewsPaper.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# ==== ПОДКЛЮЧЕНИЕ К БАЗЕ ДАННЫХ PostgreSQL ====
+# ==== ПОДКЛЮЧЕНИЕ К БАЗЕ ДАННЫХ PostgresSQL ====
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
