@@ -6,8 +6,8 @@ from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
-    # path('', NewsList.as_view(), name='post_list'),
     path('', NewsList.as_view(), name='post_list'),
+    # path('news/', NewsList.as_view(), name='post_list'),
     # path('news/<str:slug>/', NewsDetail.as_view(), name='post_detail'), # отображение заголовка в адресной строке
     path('news/<int:pk>/', NewsDetail.as_view(), name='post_detail'),  # возможен переход по id статьи\новости
     path('category/<int:pk>/', CategoryDetail.as_view(), name='category_detail'),
