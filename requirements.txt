@@ -9,3 +9,8 @@ Pillow==10.0.0
 python-dotenv==1.0.0
 redis==4.6.0
 psycopg2-binary==2.9.6
+gunicorn==21.2.0
+drf-yasg==1.21.5
+pytest-django==4.5.2
+pytest-factoryboy==2.5.1
+factory-boy==3.2.1

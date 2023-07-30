@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(int(os.getenv('DEBUG')))
+DEBUG = bool(int(os.getenv('DEBUG', default=1)))
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -174,6 +174,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# STATIC_URL = "/django_static/"
+# STATIC_ROOT = os.path.join(BASE_DIR, "django_static")
+#
+# MEDIA_URL = "/django_media/"
+# MEDIA_ROOT = os.path.join(BASE_DIR, "django_media")
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
