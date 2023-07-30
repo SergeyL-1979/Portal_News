@@ -1,0 +1,15 @@
+**
+
+!accounts/**
+!accounts
+!news
+!news/**
+!NewsPaper/**
+!manage.py
+!requirements.txt
+!Dockerfile
+!.env.test
+!.env
+!templates/**
+!entrypoint.sh
+!static/**
